@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inputs"
+    tools:context=".Signup">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="187dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="Create an Account"
+        android:textColor="#EF0E0E"
+        android:textSize="30dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="163dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/heading"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+          android:padding="10dp"
+        android:text="Name"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/NameText"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:drawableRight="@drawable/name"
+        android:ems="10"
+        android:hint="John doe"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="247dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/NameText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:padding="10dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/EmailText"
+        android:layout_width="393dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:drawableRight="@drawable/email"
+        android:ems="10"
+        android:hint="johndoe@gmail.com"
+        android:inputType="textEmailAddress" />
+
+
+    <TextView
+        android:id="@+id/Contact"
+        android:layout_width="251dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/EmailText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="Contact no" />
+
+
+    <EditText
+        android:id="@+id/PhoneText"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/Contact"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="11dp"
+
+        android:drawableRight="@drawable/phone"
+        android:ems="10"
+        android:hint="9876543210"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/PhoneText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/PasswordText"
+        android:layout_width="377dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/password"
+        android:ems="10"
+        android:hint="*********"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="387dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/PasswordText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:text="I agree with terms and condition" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="-24dp"
+        android:layout_toStartOf="@+id/Signin"
+        android:text="Already have an Account ?" />
+
+    <TextView
+        android:id="@+id/Signin"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="53dp"
+        android:text="Sign In!"
+        android:textColor="#F5F30139"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/inputs"
+        android:text="REGISTER" />
+
+</RelativeLayout>
